@@ -18,9 +18,9 @@ Zorluk: Veri seti aşırı dengesizdir (İşlemlerin yalnızca %0.17'si dolandı
 1. Keşifçi Veri Analizi (EDA) ve Örnekleme
 Veri setindeki %0.17'lik fraud oranı, standart modellerin "her şeye normal" diyerek %99.8 başarı illüzyonuna kapılmasına neden olur.
 
-Sınıf Dağılımı: outputs/class_distribution.png grafiğinde görüldüğü üzere, aşırı dengesizlik SMOTE (Synthetic Minority Over-sampling Technique) kullanımını zorunlu kılmıştır.
+![Sınıf Dağılımı](outputs/class_distribution.png) grafiğinde görüldüğü üzere, aşırı dengesizlik SMOTE (Synthetic Minority Over-sampling Technique) kullanımını zorunlu kılmıştır.
 
-Zaman Analizi: outputs/time_distribution.png grafiği ile işlemlerin gün içindeki yoğunlukları incelenmiş, dolandırıcıların tercih ettiği "ölü saatler" için Is_Night değişkeni üretilmiştir.
+![Zaman](outputs/time_distribution.png) grafiği ile işlemlerin gün içindeki yoğunlukları incelenmiş, dolandırıcıların tercih ettiği "ölü saatler" için Is_Night değişkeni üretilmiştir.
 
 2. Özellik Mühendisliği (Neyi, Neden Yaptık?)
 Sadece ham veriyi modele vermek yerine, bankacılık tecrübesine dayalı yeni metrikler türetilmiştir:
