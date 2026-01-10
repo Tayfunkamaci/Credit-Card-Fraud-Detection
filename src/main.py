@@ -103,9 +103,13 @@ def main():
 
     # 3. Veri Örnekleme (Opsiyonel - Hız için 100k normal işlem alıyoruz)
     # NOT: Özellikler hesaplandıktan sonra örnekleme yapıyoruz!
-    fraud = df_processed[df_processed['Class'] == 1]
-    non_fraud = df_processed[df_processed['Class'] == 0].sample(n=100000, random_state=17)
-    df_final = pd.concat([fraud, non_fraud]).sample(frac=1, random_state=17)
+    #fraud = df_processed[df_processed['Class'] == 1]
+    #non_fraud = df_processed[df_processed['Class'] == 0].sample(n=100000, random_state=17)
+    #df_final = pd.concat([fraud, non_fraud]).sample(frac=1, random_state=17)
+
+    # Tüm veriyi kullanıyoruz, örnekleme yok!
+    print("Tüm veri seti kullanılıyor (Sampling devre dışı)...")
+    df_final = df_processed.copy()
 
     X = df_final.drop('Class', axis=1)
     y = df_final['Class']

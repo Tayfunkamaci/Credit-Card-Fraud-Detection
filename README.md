@@ -41,15 +41,22 @@ Tek bir modele güvenmek yerine, 3 güçlü algoritmanın "ortak kararı" (Votin
 
 ---
 
-## 📈 Performans ve Karar Mekanizması
-Standart modeller `%50` ihtimalin üzerini "Dolandırıcılık" sayar. Ancak bankacılıkta bir dolandırıcılığı kaçırmanın maliyeti çok yüksektir.
-Bu yüzden modelin hassasiyet eşiği (threshold) **`0.05`** seviyesine çekilmiştir.
+## 📈 Performans ve Karar Mekanizması (Gerçek Sonuçlar)
+Standart modeller `%50` ihtimalin üzerini "Dolandırıcılık" sayar. Ancak bankacılıkta bir dolandırıcılığı kaçırmanın maliyeti çok yüksektir. Bu projede, finansal güvenliği maksimize etmek adına **Recall (Yakalama Oranı)** önceliklendirilmiştir.
 
-**Sonuçlar (Threshold: 0.05):**
-| Metrik | Değer | Anlamı |
+Modelin hassasiyet eşiği (threshold) **`0.05`** seviyesine çekilerek agresif bir güvenlik politikası izlenmiştir.
+
+**Test Seti Sonuçları (98 Adet Gerçek Fraud İşlemi Üzerinden):**
+
+| Metrik | Değer | İş Anlamı |
 |---|---|---|
-| **Recall** | **%98** | Dolandırıcıların %98'i yakalandı. |
-| **False Negative** | **~2** | Binlerce işlem arasından sadece 2 vaka kaçırıldı. |
+| **Recall (Fraud)** | **%95** | **Başarı:** 98 dolandırıcının **93 tanesi** yakalandı. |
+| **False Negative** | **~5** | Binlerce işlem arasından sadece 5 vaka gözden kaçtı. |
+| **Precision** | **%1** | **Trade-off:** Dolandırıcıları kaçırmamak için yüksek sayıda "Şüpheli İşlem" alarmı üretildi (Güvenlik Önceliği). |
+
+### Neden Düşük Precision?
+Precision değerinin düşük olması bilinçli bir **mühendislik tercihidir.** Eşik değerini 0.05 gibi çok düşük bir seviyede tutmak, normal işlemlerin bir kısmının da "incelemeye takılmasına" neden olur.
+* **Senaryo:** Banka, 1 dolandırıcıyı kaçırıp 50.000$ kaybetmektense, 100 müşteriye "Bu işlemi siz mi yaptınız?" diye SMS atmayı (False Positive) tercih eder.
 
 ![Confusion Matrix](outputs/final_confusion_matrix.png)
 
