@@ -1,5 +1,30 @@
-data/*.csv
-venv/
-.idea/
+# --- Veri Setleri (GitHub'a YÜKLENMEMELİ) ---
+data/
+*.csv
+*.zip
+*.rar
+*.xlsx
+
+# --- Jupyter Notebook (Çok Önemli!) ---
+.ipynb_checkpoints/
+
+# --- Python Ön Bellek Dosyaları ---
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Sanal Ortamlar ---
+env/
+venv/
+.env
 anaconda_projects/
+
+# --- IDE Ayarları ---
+.idea/
+.vscode/
+*.swp
+
+# --- İşletim Sistemi ---
+.DS_Store
+Thumbs.db
