@@ -161,7 +161,7 @@ Modelden gelen skor karar eşiğiyle birlikte saklandı
 
 app.py, modelden gelen çıktıyı doğrudan “fraud” kabul etmez.
 Bunun yerine şu soruyu sorar:
-- “Bu işlem, geçmiş verilerde gördüğümüz risk desenlerine göre bankanın nasıl tepki vermesi gereken bir işlem mi?”
+- “Bu işlem, geçmiş verilerden çıkarılan risk göstergelerine göre hangi bankacılık aksiyonunu gerektiriyor?”
 
 ---
 
@@ -226,7 +226,7 @@ Bu çıktılar, model ve karar politikalarının
 
 ## 🔬 Teknik Analiz ve Rapor (Jupyter Notebook)
 
-Bu proje dosyasında özetlenen iş mantığının (Business Logic) arkasındaki **istatistiksel analizleri, veri görselleştirmelerini ve matematiksel hesaplamaları** derinlemesine incelemek için teknik raporumuza göz atabilirsiniz.
+Bu proje dosyasında özetlenen iş mantığının (Business Logic) arkasındaki **istatistiksel analizleri, veri görselleştirmelerini ve matematiksel hesaplamaları** derinlemesine incelemek için teknik rapora göz atabilirsiniz.
 
 **Notebook İçeriği:**
 * 📊 **EDA (Keşifçi Veri Analizi):** Fraud işlemlerinin zamansal ve tutar bazlı dağılımları.
