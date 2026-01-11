@@ -209,7 +209,7 @@ Bu proje dosyasında özetlenen iş mantığının (Business Logic) arkasındaki
 * 🧮 **Cost Function Türetimi:** $10₺$ (FP) ve $1000₺$ (FN) maliyetlerinin matematiksel optimizasyonu.
 * 🤖 **Model Kıyaslaması:** XGBoost, LightGBM ve Random Forest modellerinin performans detayları.
 
-👉 **[Teknik Analiz Raporunu İncele (Fraud_Detection_Report.ipynb)](Fraud_Detection_Report.ipynb)**
+👉 **[Teknik Analiz Raporunu İncele (Fraud_Detection_Report.ipynb)](notebooks/Fraud_Detection_Report.ipynb)**
 
 ---
 
