@@ -200,19 +200,6 @@ Bu yapı sayesinde:
 
 ---
 
-## 🔬 Teknik Analiz ve Rapor (Jupyter Notebook)
-
-Bu proje dosyasında özetlenen iş mantığının (Business Logic) arkasındaki **istatistiksel analizleri, veri görselleştirmelerini ve matematiksel hesaplamaları** derinlemesine incelemek için teknik raporumuza göz atabilirsiniz.
-
-**Notebook İçeriği:**
-* 📊 **EDA (Keşifçi Veri Analizi):** Fraud işlemlerinin zamansal ve tutar bazlı dağılımları.
-* 🧮 **Cost Function Türetimi:** $10₺$ (FP) ve $1000₺$ (FN) maliyetlerinin matematiksel optimizasyonu.
-* 🤖 **Model Kıyaslaması:** XGBoost, LightGBM ve Random Forest modellerinin performans detayları.
-
-👉 **[Teknik Analiz Raporunu İncele (Fraud_Detection_Report.ipynb)](notebooks/Fraud_Detection_Report.ipynb)**
-
----
-
 ## 🖥️ Streamlit Uygulaması
 
 app.py ile:
@@ -235,6 +222,18 @@ app.py ile:
 Bu çıktılar, model ve karar politikalarının
 **sezgisel değil, ölçülebilir ve maliyet temelli** olarak belirlendiğini göstermek amacıyla üretilmiştir.
 
+---
+
+## 🔬 Teknik Analiz ve Rapor (Jupyter Notebook)
+
+Bu proje dosyasında özetlenen iş mantığının (Business Logic) arkasındaki **istatistiksel analizleri, veri görselleştirmelerini ve matematiksel hesaplamaları** derinlemesine incelemek için teknik raporumuza göz atabilirsiniz.
+
+**Notebook İçeriği:**
+* 📊 **EDA (Keşifçi Veri Analizi):** Fraud işlemlerinin zamansal ve tutar bazlı dağılımları.
+* 🧮 **Cost Function Türetimi:** $10₺$ (FP) ve $1000₺$ (FN) maliyetlerinin matematiksel optimizasyonu.
+* 🤖 **Model Kıyaslaması:** XGBoost, LightGBM ve Random Forest modellerinin performans detayları.
+
+👉 **[Teknik Analiz Raporunu İncele (Fraud_Detection_Report.ipynb)](notebooks/Fraud_Detection_Report.ipynb)**
 
 ---
 
